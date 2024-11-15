@@ -6,9 +6,9 @@
 // Impostiamo un nuovo script “watch” in package.json che possa essere lanciato con npm run dev
 // e che aggiorni in tempo reale le modifiche ai nostri file.
 // Lanciamolo e proviamo a cambiare il nostro codice in modo che stampi nel terminale “Hello Boolean”.
-//Dovremmo vedere il terminale senza fermare e rilanciare il server.
+// Dovremmo vedere il terminale senza fermare e rilanciare il server.
 // Proviamo a passare da terminale una parola come argomento da mostrare dopo “Hello”.
 // Dovremo quindi stampare “Hello parola_passata”
 
 const saluto = process.argv[2];
-console.log(saluto.toUpperCase());
+console.log(`Hello ${saluto}`);
